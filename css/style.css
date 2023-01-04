@@ -835,9 +835,11 @@ textarea {
       -ms-flex-align: center;
           align-items: center;
   border-radius: 0.5rem;
-  -webkit-transition: margin-top 0.3s ease 0s;
-  -o-transition: margin-top 0.3s ease 0s;
+  -webkit-transition: -webkit-transform 0.3s ease 0s;
+  transition: -webkit-transform 0.3s ease 0s;
+  -o-transition: transform 0.3s ease 0s;
   transition: transform 0.3s ease 0s;
+  transition: transform 0.3s ease 0s, -webkit-transform 0.3s ease 0s;
   padding: 0.625rem 0;
 }
 
@@ -1534,7 +1536,9 @@ textarea {
   }
 
   .item-testimonial:hover {
-    transform:translateY(-0.9375rem);
+    -webkit-transform: translateY(-0.9375rem);
+        -ms-transform: translateY(-0.9375rem);
+            transform: translateY(-0.9375rem);
   }
 
   .addresses__contact:hover {
