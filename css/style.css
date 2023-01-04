@@ -364,6 +364,10 @@ textarea {
   z-index: 50;
 }
 
+.header._header-scroll {
+  padding: 0.625rem 0rem;
+}
+
 .header__container {
   display: -ms-grid;
   display: grid;
@@ -382,6 +386,10 @@ textarea {
   z-index: 5;
   -webkit-animation: logo 1.5s ease-in-out 0.2s 1;
           animation: logo 1.5s ease-in-out 0.2s 1;
+}
+
+._header-scroll .header__logo {
+  width: 3.75rem;
 }
 
 .header__logo img {
