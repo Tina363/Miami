@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230103170141">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230104111227">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,18 +14,18 @@
 
 <body>
 	<div class="wrapper">
-		<header class="header" data-lp>
+		<header class="header" data-lp data-scroll="320">
 			<div class="header__container">
 				<div class="header__menu menu">
 					<button type="button" class="menu__icon icon-menu"><span></span></button>
 					<nav class="menu__body">
 						<div class="menu__container">
 							<ul class="menu__list">
-								<li class="menu__item"><a href="#home" class="menu__link">Home</a></li>
-								<li class="menu__item"><a href="#about" class="menu__link">About Us</a></li>
-								<li class="menu__item"><a href="#gallery" class="menu__link">gallery</a></li>
-								<li class="menu__item"><a href="#testimonials" class="menu__link">testimonials</a></li>
-								<li class="menu__item"><a href="#contacts" class="menu__link">Contacts</a></li>
+								<li class="menu__item"><a href="" data-goto="#home" data-goto-header class="menu__link">Home</a></li>
+								<li class="menu__item"><a href="" data-goto="#about" data-goto-header class="menu__link">About Us</a></li>
+								<li class="menu__item"><a href="" data-goto="#gallery" data-goto-header class="menu__link">gallery</a></li>
+								<li class="menu__item"><a href="" data-goto="#testimonials" data-goto-header class="menu__link">testimonials</a></li>
+								<li class="menu__item"><a href="" data-goto="#contacts" data-goto-header class="menu__link">Contacts</a></li>
 							</ul>
 							<ul class="menu__contact contact-list">
 								<li class="contact-list__item">
@@ -66,7 +66,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="page__gallery gallery" id="gallery">
+			<section class="page__gallery gallery" id="gallery" data-watch data-watch-threshold="0.1">
 				<div class="gallery__container">
 					<h2 class="gallery__title title">Gallery <span class="_icon-corona-virus"></span></h2>
 					<div class="gallery__items">
@@ -107,7 +107,7 @@
 					<button class="button" type="button">View all</button>
 				</div>
 			</section>
-			<section class="page__testimonial testimonial" id="testimonials">
+			<section class="page__testimonial testimonial" id="testimonials" data-watch>
 				<div class="testimonial__container">
 					<h2 class="testimonial__title title">Testimonials <span class="_icon-corona-virus"></span></h2>
 					<div class="testimonial__items">
@@ -146,7 +146,7 @@
 				</div>
 
 			</section>
-			<section class="page__contacts contacts" id="contacts">
+			<section class="page__contacts contacts" id="contacts" data-watch>
 				<div class="contacts__container">
 					<h2 class="contacts__title title">Contact us<span class="_icon-corona-virus"></span></h2>
 					<div class="contacts__body">
@@ -158,7 +158,7 @@
 								</div>
 								<div class="addresses__item">
 									<div class="addresses__label">Email</div>
-									<a href="mail:hello@miami.com" class="addresses__contact text">hello@miami.com</a>
+									<a href="mailto:hello@miami.com" class="addresses__contact text">hello@miami.com</a>
 								</div>
 							</div>
 							<div class="addresses__column">
@@ -186,10 +186,13 @@
 		</main>
 		<footer class="footer">
 			<div class="footer__container">
+				<a href="" class="footer__logo">
+					<img src="img/logo.svg" alt="Logo">
+				</a>
 			</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20230103170141"></script>
+	<script src="js/app.min.js?_v=20230104111227"></script>
 </body>
 
 </html>
